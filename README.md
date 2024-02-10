@@ -61,7 +61,7 @@ data['location'].value_counts()
 data=data[((data['total_sqft']/data['bhk'])>=300)]
 data.describe()
 ```
-<img width="475" alt="Screenshot 2024-02-10 183825" src="https://github.com/Pratiksha022002/HousePricePredictor/assets/99002937/591a5ac3-8468-4e0a-8784-4a6f72475531">
+<img width="475" alt="Screenshot 2024-02-10 183825" src="https://github.com/Pratiksha022002/HousePricePredictor/assets/99002937/591a5ac3-8468-4e0a-8784-4a6f72475531">  <br/>
 <img width="463" alt="Screenshot 2024-02-10 191444" src="https://github.com/Pratiksha022002/HousePricePredictor/assets/99002937/4a4ea2c1-6773-4546-ac3d-5c8f563d7ba7">
 
 ---
@@ -116,6 +116,7 @@ y_pred_ridge =pipe.predict(X_test)
 r2_score(y_test,y_pred_ridge)
 ```
 0.8234152781571118
+
 ----
 #### 4.Conclusion
 ```python
@@ -123,8 +124,8 @@ print("No Regularization",r2_score(y_test,y_pred_lr))
 print("Lasso",r2_score(y_test,y_pred_lasso))
 print("Ridge",r2_score(y_test,y_pred_ridge))
 ```
-No Regularization 0.8233783112740469/n
-Lasso 0.8128285650772716/n
-Ridge 0.8234152781571118/n
+No Regularization 0.8233783112740469 <br/>
+Lasso 0.8128285650772716  <br/>
+Ridge 0.8234152781571118  <br/>
 - r2 score for Ridge regression is higher so we save it using pickle
 - This pickle file is used for building a website.
