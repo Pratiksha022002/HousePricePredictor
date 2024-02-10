@@ -97,6 +97,7 @@ pipe.fit(X_train,y_train)
 y_pred_lr=pipe.predict(X_test)
 r2_score(y_test,y_pred_lr)
 ```
+0.8233783112740469
 - Lasso Regression
 ```python
 lasso=Lasso()
@@ -105,6 +106,7 @@ pipe.fit(X_train,y_train)
 y_pred_lasso=pipe.predict(X_test)
 r2_score(y_test,y_pred_lasso)
 ```
+0.8128285650772716
 - Ridge Regression
 ```python
 ridge=Ridge()
@@ -112,7 +114,7 @@ pipe=make_pipeline(column_trans,scaler,ridge)
 pipe.fit(X_train,y_train)
 y_pred_ridge =pipe.predict(X_test)
 r2_score(y_test,y_pred_ridge)
-```
+```0.8234152781571118
 ----
 #### 4.Conclusion
 ```python
@@ -120,5 +122,8 @@ print("No Regularization",r2_score(y_test,y_pred_lr))
 print("Lasso",r2_score(y_test,y_pred_lasso))
 print("Ridge",r2_score(y_test,y_pred_ridge))
 ```
+No Regularization 0.8233783112740469
+Lasso 0.8128285650772716
+Ridge 0.8234152781571118
 - r2 score for Ridge regression is higher so we save it using pickle
 - This pickle file is used for building a website.
