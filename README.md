@@ -61,6 +61,9 @@ data['location'].value_counts()
 data=data[((data['total_sqft']/data['bhk'])>=300)]
 data.describe()
 ```
+<img width="475" alt="Screenshot 2024-02-10 183825" src="https://github.com/Pratiksha022002/HousePricePredictor/assets/99002937/591a5ac3-8468-4e0a-8784-4a6f72475531">
+<img width="463" alt="Screenshot 2024-02-10 191444" src="https://github.com/Pratiksha022002/HousePricePredictor/assets/99002937/4a4ea2c1-6773-4546-ac3d-5c8f563d7ba7">
+
 ---
 #### 2. Split Data:
 ```python
