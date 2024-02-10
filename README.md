@@ -17,7 +17,9 @@ import pickle
 data=pd.read_csv("Bengaluru_House_Data.csv")
 data.head()
 ```
-![alt text](<Screenshot 2024-02-10 180834.png>)
+<img width="395" alt="Screenshot 2024-02-10 182806" src="https://github.com/Pratiksha022002/HousePricePredictor/assets/99002937/6532dd85-1028-48c5-a9aa-6804b7cab73a">
+
+
 ```python
 #find null values and fill them with most occuring value
 data['location']=data['location'].fillna('Sarjapur Road')
